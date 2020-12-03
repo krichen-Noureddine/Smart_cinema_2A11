@@ -937,7 +937,7 @@ border:2px solid #000;
         <string notr="true">background-image: url(:/background/f00c8659de97e6ae6d5ce2fe81a6c490.png);</string>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab_9">
         <attribute name="title">
