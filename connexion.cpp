@@ -1,5 +1,4 @@
 #include "connexion.h"
-// test
 
 Connexion::Connexion()
 {}

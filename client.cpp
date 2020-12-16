@@ -110,10 +110,18 @@ return false;}
 bool Client::testnumber(QString number){
 
 
-    if(number.size()==8)
-        return true;
+
+    if(number.size()!=8)
     return false;
 
+    for(int i = 0; i < number.size(); i++) {
+
+
+    if (!(number[i] >= '0' && number[i] <= '9'))
+        return false;
+
+}
+    return true;
 
 
 }

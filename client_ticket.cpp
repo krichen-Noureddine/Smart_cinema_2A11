@@ -715,5 +715,5 @@ void Client_ticket::on_sendBtn_3_clicked()
     Smtp* smtp = new Smtp("farmeresprit414@gmail.com","farmer1919","smtp.gmail.com",465);
           connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
 
-          smtp->sendMail("farmeresprit414@gmail.com",ui->rcpt->currentText(),ui->subject->text(),ui->msg->toPlainText());
+          smtp->sendMail("oussamasaid929@gmail.com",ui->rcpt->currentText(),ui->subject->text(),ui->msg->toPlainText());
 }

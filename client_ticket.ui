@@ -78,7 +78,7 @@ border:2px solid #000;
         </font>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab_10">
         <attribute name="title">
@@ -642,7 +642,7 @@ border:2px solid #00159a;
          <property name="geometry">
           <rect>
            <x>910</x>
-           <y>210</y>
+           <y>220</y>
            <width>191</width>
            <height>22</height>
           </rect>
@@ -937,7 +937,7 @@ border:2px solid #000;
         <string notr="true">background-image: url(:/background/f00c8659de97e6ae6d5ce2fe81a6c490.png);</string>
        </property>
        <property name="currentIndex">
-        <number>2</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tab_9">
         <attribute name="title">
@@ -1772,11 +1772,6 @@ border:2px solid #00159a;
          <item>
           <property name="text">
            <string>MAIL</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>TEL</string>
           </property>
          </item>
         </widget>
