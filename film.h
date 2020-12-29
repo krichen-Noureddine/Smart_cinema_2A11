@@ -27,6 +27,18 @@ public:
          bool ajouterfilm();
          bool supprimerfilm(int);
          QSqlQueryModel *afficherfilm();
+         QSqlQueryModel * cherchernom(const QString &);
+         QSqlQueryModel * chercherid(const QString &);
+         QSqlQueryModel * cherchergenre(const QString &);
+
+         QSqlQueryModel * trier_nom();
+         QSqlQueryModel * trier_id();
+         QSqlQueryModel * trier_genre();
+
+         QSqlQueryModel * trier_nom2();
+         QSqlQueryModel * trier_id2();
+         QSqlQueryModel * trier_genre2();
+
 };
 
 #endif // FILM_H

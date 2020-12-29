@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1158</width>
-    <height>619</height>
+    <width>1150</width>
+    <height>616</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,8 +35,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1121</width>
-        <height>541</height>
+        <width>1161</width>
+        <height>571</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -247,7 +247,7 @@
          <rect>
           <x>20</x>
           <y>10</y>
-          <width>1071</width>
+          <width>1081</width>
           <height>491</height>
          </rect>
         </property>
@@ -272,9 +272,25 @@
           <rect>
            <x>700</x>
            <y>130</y>
-           <width>111</width>
-           <height>31</height>
+           <width>190</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+     border-style: outset;
+     border-width: 4px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px
+
+</string>
          </property>
          <property name="text">
           <string>modifier</string>
@@ -285,9 +301,24 @@
           <rect>
            <x>700</x>
            <y>180</y>
-           <width>111</width>
-           <height>31</height>
+           <width>190</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+     border-style: outset;
+     border-width: 4px;
+     border-radius: 10px;
+    
+border-color: rgb(255, 255, 255);
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px</string>
          </property>
          <property name="text">
           <string>supprimer par id</string>
@@ -302,25 +333,49 @@
            <height>311</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">  border: 2px solid grey;
+border-color: rgb(0, 0, 0);
+     border-radius: 5px;</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="lineEdit_supprimer">
          <property name="geometry">
           <rect>
-           <x>810</x>
+           <x>880</x>
            <y>180</y>
-           <width>141</width>
-           <height>31</height>
+           <width>186</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">  border: 2px solid grey;
+border-color: rgb(0, 0, 0);
+     border-radius: 5px;</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_5">
          <property name="geometry">
           <rect>
            <x>890</x>
-           <y>440</y>
-           <width>151</width>
-           <height>31</height>
+           <y>430</y>
+           <width>190</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+     border-style: outset;
+     border-width: 4px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px</string>
          </property>
          <property name="text">
           <string>Quitter</string>
@@ -331,74 +386,38 @@
           <rect>
            <x>30</x>
            <y>70</y>
-           <width>93</width>
+           <width>190</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+     border-style: outset;
+     border-width: 4px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px</string>
          </property>
          <property name="text">
           <string>Rechercher</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="lineEdit_18">
          <property name="geometry">
           <rect>
-           <x>120</x>
+           <x>210</x>
            <y>71</y>
-           <width>451</width>
+           <width>361</width>
            <height>41</height>
           </rect>
          </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="geometry">
-          <rect>
-           <x>30</x>
-           <y>440</y>
-           <width>93</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>Trier</string>
-         </property>
-        </widget>
-        <widget class="QCheckBox" name="checkBox">
-         <property name="geometry">
-          <rect>
-           <x>170</x>
-           <y>450</y>
-           <width>81</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>Id</string>
-         </property>
-        </widget>
-        <widget class="QCheckBox" name="checkBox_2">
-         <property name="geometry">
-          <rect>
-           <x>280</x>
-           <y>450</y>
-           <width>81</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>Nom</string>
-         </property>
-        </widget>
-        <widget class="QCheckBox" name="checkBox_3">
-         <property name="geometry">
-          <rect>
-           <x>380</x>
-           <y>450</y>
-           <width>81</width>
-           <height>20</height>
-          </rect>
-         </property>
-         <property name="text">
-          <string>genre</string>
+         <property name="styleSheet">
+          <string notr="true">  border: 4px solid grey;
+border-color: rgb(0, 0, 0);
+     border-radius: 5px;</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_6">
@@ -411,10 +430,129 @@
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+  border: 4px solid grey;
+border-color: rgb(0, 0, 0);
+     border-radius: 5px;</string>
          </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>  Trier par </string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>50</y>
+           <width>95</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>id</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>50</y>
+           <width>95</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>genre</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>50</y>
+           <width>95</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>nom</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>440</y>
+           <width>190</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+     border-style: outset;
+     border-width: 4px;
+     border-radius: 10px;
+     border-color: beige;
+     font: bold 14px;
+     min-width: 10em;
+     padding: 6px</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>select</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Nom</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>id</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>genre</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>duree</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>date_de_sortie</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_8">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>450</y>
+           <width>95</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ordre desc</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_7">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>450</y>
+           <width>95</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ordre asc</string>
          </property>
         </widget>
         <zorder>label_6</zorder>
@@ -425,19 +563,21 @@
         <zorder>lineEdit_supprimer</zorder>
         <zorder>pushButton_5</zorder>
         <zorder>pushButton_6</zorder>
-        <zorder>lineEdit</zorder>
-        <zorder>pushButton_7</zorder>
-        <zorder>checkBox</zorder>
-        <zorder>checkBox_2</zorder>
-        <zorder>checkBox_3</zorder>
+        <zorder>lineEdit_18</zorder>
+        <zorder>radioButton</zorder>
+        <zorder>radioButton_2</zorder>
+        <zorder>radioButton_3</zorder>
+        <zorder>comboBox2</zorder>
+        <zorder>radioButton_8</zorder>
+        <zorder>radioButton_7</zorder>
        </widget>
        <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
-          <x>-70</x>
-          <y>-50</y>
-          <width>1191</width>
-          <height>571</height>
+          <x>-60</x>
+          <y>0</y>
+          <width>1231</width>
+          <height>531</height>
          </rect>
         </property>
         <property name="text">
@@ -469,7 +609,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
@@ -738,7 +878,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1158</width>
+     <width>1150</width>
      <height>26</height>
     </rect>
    </property>

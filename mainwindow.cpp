@@ -4,12 +4,14 @@
 #include <QDebug>
 #include <QRegularExpression>
 #include "connection.h"
+#include"film.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {   MRE=QRegExp("^[0-9]+([0-9]*[-._+])*[0-9]");
     ui->setupUi(this);
     ui->tablefilm->setModel(tempfilm.afficherfilm());
+   // this->setStyleSheet("background-color: rgb(202,202,202);");
 
 
 
@@ -115,4 +117,86 @@ void MainWindow::on_pushButton_even_clicked()
 void MainWindow::on_lineEdit_nom_returnPressed()
 {
 
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+
+        if (ui->radioButton_3->isChecked())
+        {
+            QString type= ui->lineEdit_18->text() ;
+            ui->tablefilm->setModel(tempfilm.cherchernom(type));
+
+        }
+
+        if (ui->radioButton->isChecked())
+        {
+            QString type= ui->lineEdit_18->text() ;
+            ui->tablefilm->setModel(tempfilm.chercherid(type));
+
+        }
+
+        if (ui->radioButton_2->isChecked())
+        {
+            QString type= ui->lineEdit_18->text() ;
+            ui->tablefilm->setModel(tempfilm.cherchergenre(type));
+
+        }
+        if (!(ui->radioButton_3->isChecked())&&!(ui->radioButton_2->isChecked())&&!(ui->radioButton->isChecked()))
+               {
+            QMessageBox::critical(nullptr, QObject::tr("cherche échoué"),
+                                   QObject::tr("\n"
+                                               "Click Cancel to exit."), QMessageBox::Cancel);
+        }
+    }
+
+
+void MainWindow::on_comboBox2_activated(const QString &arg1)
+{
+    if(arg1=="Nom")
+       {
+        if (ui->radioButton_7->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_nom());
+
+        }
+        if (ui->radioButton_8->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_nom2());
+
+        }
+       }
+    if(arg1=="id")
+       {
+        if (ui->radioButton_7->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_id());
+
+        }
+        if (ui->radioButton_8->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_id2());
+
+        }
+       }
+    if(arg1=="genre")
+       {
+        if (ui->radioButton_7->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_genre());
+
+        }
+        if (ui->radioButton_8->isChecked())
+        {
+            ui->tablefilm->setModel(tempfilm.trier_genre2());
+
+        }
+       }
+
+    if (arg1=="Select")
+    {
+        QMessageBox::critical(nullptr, QObject::tr("Erreur"),
+                    QObject::tr("Tu n'as pas choisis   !.\n"
+                                "Click Cancel to exit."), QMessageBox::Cancel);
+    }
 }

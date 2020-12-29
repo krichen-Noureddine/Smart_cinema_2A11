@@ -3,6 +3,7 @@
 #include<QString>
 #include<QDateTimeEdit>
 #include<QSqlQueryModel>
+//second entite
 class even
 {
     QString nom;
