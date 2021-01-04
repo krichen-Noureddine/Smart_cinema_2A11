@@ -1,11 +1,6 @@
-/*#include "dialog.h"
+#include "dialog.h"
 #include "ui_dialog.h"
-#include "mailing/SmtpMime"
-#include <QMessageBox>
-#include <QApplication>
-#include "mainwindow.h"
-#include "film.h"
-
+#include "smtp.h"
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -13,50 +8,32 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+       ui->server->setText("smtp.gmail.com");
+       ui->port->setText("465");
 }
+Dialog::Dialog(QString,QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::Dialog)
+{
+    QString contenu="Contenu";
+    ui->setupUi(this);
+    ui->server->setText("smtp.gmail.com");
+    ui->port->setText("465");
 
+    ui->uname->setText("noureddine.krichen@esprit.tn");
+    ui->passwd->setText("191JMT1735");
+    ui->passwd->setEchoMode(QLineEdit::Password);
+
+}
 Dialog::~Dialog()
 {
     delete ui;
 }
 
-void Dialog::on_pushButton_envoyer_clicked()
+void Dialog::on_pushButton_2_clicked()
 {
+    Smtp* smtp = new Smtp(ui->uname->text(), ui->passwd->text(), ui->server->text(), ui->port->text().toInt());
 
-        SmtpClient smtp("smtp.gmail.com", 465, SmtpClient::SslConnection);
+    smtp->sendMail(ui->uname->text(), ui->recipient->text() , "subject" ,ui->message->toPlainText());
 
-
-
-
-                    smtp.setUser("ehealth120@gmail.com");
-                    smtp.setPassword("Ehealth1201232");
-
-
-
-            MimeMessage message;
-
-            message.setSender(new EmailAddress("ehealth120@gmail.com", "Habib Maazoun"));
-            message.addRecipient(new EmailAddress(ui->lineEdit_adresse->text(), "Recipient's name"));
-            message.setSubject(ui->lineEdit_objet->text());
-
-
-
-            MimeText text;
-
-            text.setText(ui->textEdit_texte->toPlainText());
-
-
-
-            message.addPart(&text);
-
-            smtp.connectToHost();
-            smtp.login();
-            if (smtp.sendMail(message)){
-               QMessageBox::information(this, "OK", "email envoyé");
-            }
-            else{
-               QMessageBox::critical(this, "Erreur","email non envoyé");
-            }
-            smtp.quit();
 }
-*/

@@ -23,10 +23,24 @@ bool film::ajouterfilm()
     query.bindValue(":duree",duree);
 
     return query.exec();
-
-
-
 }
+    bool film::modifier()
+    {
+
+        QSqlQuery query;
+
+        query.prepare("UPDATE film SET ID=:id,NOM=:nom,GENRE=:genre, Durée=:duree, DATE_DE_SORTIE=:date  WHERE ID=:id") ;
+        QString r=QString::number(id);
+         query.bindValue(":nom",nom);
+         query.bindValue(":id",r);
+         query.bindValue(":genre",genre);
+         query.bindValue(":date",date);
+         query.bindValue(":duree",duree);
+
+        return    query.exec();
+    }
+
+
 bool film::supprimerfilm(int i)
 {QSqlQuery query;
     query.prepare("Delete from film where id=:id");

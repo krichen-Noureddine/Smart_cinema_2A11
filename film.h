@@ -25,6 +25,7 @@ public:
          QDate get_date() {return date;}
          QString get_duree(){return duree;}
          bool ajouterfilm();
+           bool modifier();
          bool supprimerfilm(int);
          QSqlQueryModel *afficherfilm();
          QSqlQueryModel * cherchernom(const QString &);
@@ -38,7 +39,6 @@ public:
          QSqlQueryModel * trier_nom2();
          QSqlQueryModel * trier_id2();
          QSqlQueryModel * trier_genre2();
-
 };
 
 #endif // FILM_H

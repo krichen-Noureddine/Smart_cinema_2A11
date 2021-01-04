@@ -3,7 +3,6 @@
 #include<QString>
 #include<QDateTimeEdit>
 #include<QSqlQueryModel>
-//second entite
 class even
 {
     QString nom;
@@ -22,6 +21,7 @@ public:
          QDateTime get_datefin() {return datefin;}
 
          bool ajoutereven();
+          bool modifiereven();
          bool supprimereven(int);
          QSqlQueryModel *affichereven();
 

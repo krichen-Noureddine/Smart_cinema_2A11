@@ -1,4 +1,4 @@
-/*#ifndef DIALOG_H
+#ifndef DIALOG_H
 #define DIALOG_H
 
 #include <QDialog>
@@ -13,14 +13,17 @@ class Dialog : public QDialog
 
 public:
     explicit Dialog(QWidget *parent = nullptr);
+    explicit Dialog(QString,QWidget *parent = nullptr);
     ~Dialog();
+    void set_tmpemail(QString e){tmpemail=e;}
 
 private slots:
-    void on_pushButton_envoyer_clicked();
+    void on_pushButton_2_clicked();
+
 
 private:
     Ui::Dialog *ui;
+    QString tmpemail;
 };
 
 #endif // DIALOG_H
-*/
