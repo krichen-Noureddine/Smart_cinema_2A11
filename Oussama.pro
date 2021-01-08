@@ -7,7 +7,8 @@
 QT+= core gui printsupport
 QT+= sql
 QT += core gui charts
-QT += core gui network
+QT += core gui network multimedia multimediawidgets
+QT += serialport
 
 
 CONFIG+=console
@@ -31,8 +32,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    arduino.cpp \
     client.cpp \
     client_ticket.cpp \
+    historique.cpp \
     ticket.cpp \
         main.cpp \
     connexion.cpp \
@@ -40,9 +43,11 @@ SOURCES += \
     notification.cpp
 
 HEADERS += \
+    arduino.h \
     client.h \
     client_ticket.h \
     connexion.h \
+    historique.h \
     ticket.h \
     smtp.h\
     notification.h
@@ -56,3 +61,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    resources/resources.qrc \
+    resources/sound/sound.qrc
+
+

@@ -17,14 +17,14 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>20</y>
       <width>1191</width>
       <height>631</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -78,7 +78,7 @@ border:2px solid #000;
         </font>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tab_10">
         <attribute name="title">
@@ -330,6 +330,36 @@ border:2px solid #00159a;
 </string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1121</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources/resources.qrc">:/new/prefix1/istockphoto-970785084-170667a.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <zorder>label_8</zorder>
+        <zorder>lineEdit_prix</zorder>
+        <zorder>reference_22</zorder>
+        <zorder>quantite_7</zorder>
+        <zorder>pb_ajouter</zorder>
+        <zorder>reference_23</zorder>
+        <zorder>reference_24</zorder>
+        <zorder>lineEdit_id</zorder>
+        <zorder>dateEdit</zorder>
+        <zorder>comboBox_idc</zorder>
+        <zorder>Ticket_affichage1</zorder>
        </widget>
        <widget class="QWidget" name="tab_12">
         <attribute name="title">
@@ -359,7 +389,7 @@ border:2px solid #00159a;
         <widget class="QLabel" name="label_15">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>90</x>
            <y>40</y>
            <width>99</width>
            <height>16</height>
@@ -376,13 +406,13 @@ border:2px solid #00159a;
           <string notr="true">color:#00159a</string>
          </property>
          <property name="text">
-          <string>Chercher avec:</string>
+          <string>Chercher :</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pb_supprimer">
          <property name="geometry">
           <rect>
-           <x>850</x>
+           <x>950</x>
            <y>390</y>
            <width>131</width>
            <height>31</height>
@@ -454,7 +484,7 @@ border:2px solid #00159a;
         <widget class="QLabel" name="label_13">
          <property name="geometry">
           <rect>
-           <x>830</x>
+           <x>920</x>
            <y>360</y>
            <width>221</width>
            <height>21</height>
@@ -703,31 +733,6 @@ border:2px solid #00159a;
           </rect>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_recherche_ticket">
-         <property name="geometry">
-          <rect>
-           <x>150</x>
-           <y>40</y>
-           <width>73</width>
-           <height>22</height>
-          </rect>
-         </property>
-         <item>
-          <property name="text">
-           <string>ID</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>IDC</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>PRIX</string>
-          </property>
-         </item>
-        </widget>
         <widget class="QPushButton" name="tri_deccroissant_ticket">
          <property name="geometry">
           <rect>
@@ -878,6 +883,59 @@ transition: all 0.4s ease 0s;
           <string>STAT</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1121</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources/resources.qrc">:/new/prefix1/istockphoto-970785084-170667a.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="web">
+         <property name="geometry">
+          <rect>
+           <x>740</x>
+           <y>370</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>web</string>
+         </property>
+        </widget>
+        <zorder>label_7</zorder>
+        <zorder>recherche_ticket</zorder>
+        <zorder>label_15</zorder>
+        <zorder>pb_supprimer</zorder>
+        <zorder>Ticket_affichage</zorder>
+        <zorder>label_13</zorder>
+        <zorder>pb_modifier</zorder>
+        <zorder>label_17</zorder>
+        <zorder>reference_27</zorder>
+        <zorder>quantite_11</zorder>
+        <zorder>reference_25</zorder>
+        <zorder>lineEdit_prix1</zorder>
+        <zorder>dateEdit1</zorder>
+        <zorder>reference_26</zorder>
+        <zorder>lineEdit_id1</zorder>
+        <zorder>comboBox_idc1</zorder>
+        <zorder>tri_deccroissant_ticket</zorder>
+        <zorder>label_21</zorder>
+        <zorder>tri_croissant_ticket</zorder>
+        <zorder>stat_ticket</zorder>
+        <zorder>web</zorder>
        </widget>
       </widget>
      </widget>
@@ -1279,6 +1337,40 @@ border:2px solid #00159a;
 </string>
          </property>
         </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-5</y>
+           <width>1121</width>
+           <height>471</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources/resources.qrc">:/new/prefix1/panneau-clap-film-fond-rose-pour-equipement-tournage_9555-779.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <zorder>label</zorder>
+        <zorder>quantite_2</zorder>
+        <zorder>lineEdit_cin</zorder>
+        <zorder>reference_7</zorder>
+        <zorder>pb_ajouter_c</zorder>
+        <zorder>lineEdit_tel</zorder>
+        <zorder>lineEdit_nom</zorder>
+        <zorder>reference_13</zorder>
+        <zorder>lineEdit_prenom</zorder>
+        <zorder>reference_14</zorder>
+        <zorder>lineEdit_mail</zorder>
+        <zorder>quantite_8</zorder>
+        <zorder>quantite_9</zorder>
+        <zorder>lineEdit_adresse</zorder>
+        <zorder>Client_affichage_2</zorder>
        </widget>
        <widget class="QWidget" name="tab_11">
         <attribute name="title">
@@ -1740,41 +1832,6 @@ border:2px solid #00159a;
 </string>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_recherche_client">
-         <property name="geometry">
-          <rect>
-           <x>130</x>
-           <y>30</y>
-           <width>73</width>
-           <height>22</height>
-          </rect>
-         </property>
-         <item>
-          <property name="text">
-           <string>CIN</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>NOM</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>PRENOM</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>ADRESSE</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>MAIL</string>
-          </property>
-         </item>
-        </widget>
         <widget class="QPushButton" name="tri_deccroissant_Client">
          <property name="geometry">
           <rect>
@@ -1928,8 +1985,8 @@ transition: all 0.4s ease 0s;
         <widget class="QLabel" name="label_16">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>30</y>
+           <x>90</x>
+           <y>40</y>
            <width>99</width>
            <height>16</height>
           </rect>
@@ -1945,9 +2002,52 @@ transition: all 0.4s ease 0s;
           <string notr="true">color:#00159a</string>
          </property>
          <property name="text">
-          <string>Chercher avec:</string>
+          <string>Chercher :</string>
          </property>
         </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1121</width>
+           <height>471</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources/resources.qrc">:/new/prefix1/panneau-clap-film-fond-rose-pour-equipement-tournage_9555-779.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <zorder>label_2</zorder>
+        <zorder>pb_supprimer_c</zorder>
+        <zorder>label_11</zorder>
+        <zorder>label_12</zorder>
+        <zorder>pb_modifier_c</zorder>
+        <zorder>recherche_client</zorder>
+        <zorder>lineEdit_prenom1</zorder>
+        <zorder>quantite_10</zorder>
+        <zorder>lineEdit_cin1</zorder>
+        <zorder>quantite_14</zorder>
+        <zorder>lineEdit_mail1</zorder>
+        <zorder>lineEdit_nom1</zorder>
+        <zorder>lineEdit_tel1</zorder>
+        <zorder>NOM</zorder>
+        <zorder>lineEdit_adresse1</zorder>
+        <zorder>reference_8</zorder>
+        <zorder>quantite_3</zorder>
+        <zorder>reference_16</zorder>
+        <zorder>Client_affichage</zorder>
+        <zorder>tri_deccroissant_Client</zorder>
+        <zorder>tri_croissant_Client</zorder>
+        <zorder>label_20</zorder>
+        <zorder>pdf_client</zorder>
+        <zorder>label_16</zorder>
        </widget>
        <widget class="QWidget" name="tab_3">
         <attribute name="title">
@@ -2095,8 +2195,53 @@ border:2px solid #00159a;
           </rect>
          </property>
         </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1121</width>
+           <height>471</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources/resources.qrc">:/new/prefix1/panneau-clap-film-fond-rose-pour-equipement-tournage_9555-779.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <zorder>label_3</zorder>
+        <zorder>sendBtn_3</zorder>
+        <zorder>label_51</zorder>
+        <zorder>subject</zorder>
+        <zorder>label_53</zorder>
+        <zorder>msg</zorder>
+        <zorder>label_52</zorder>
+        <zorder>rcpt</zorder>
        </widget>
       </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>arduino</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>210</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
      </widget>
     </widget>
    </widget>
@@ -2122,6 +2267,8 @@ border:2px solid #00159a;
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

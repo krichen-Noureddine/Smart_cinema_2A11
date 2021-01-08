@@ -3,8 +3,9 @@
 #include "ticket.h"
 #include "client.h"
 #include "notification.h"
-
-
+#include <QMediaPlayer>
+#include "historique.h"
+#include "arduino.h"
 
 #include <QMainWindow>
 
@@ -64,14 +65,30 @@ private slots:
     void on_sendBtn_3_clicked();
     void mailSent(QString);
 
+    void on_comboBox_recherche_ticket_activated(const QString &arg1);
+
+    void on_pb_supprimer_2_clicked();
+
+    void on_pb_web_clicked();
+
+    void on_pb_supprimer__clicked();
+
+    void on_web_clicked();
+    void on_normalBtn_clicked() ;
+    void on_urgentBtn_clicked() ;
+    void readTemp();
+
+    void on_label_4_linkActivated(const QString &link);
 
 private:
     Ui::Client_ticket *ui;
     Ticket tmp_Ticket;
     Client tmp_Client;
     Notification N;
+    historique historique1 ;
+     Arduino smartTools;
     void refresh();
-
+    QMediaPlayer musicAdd;
 
 };
 
