@@ -1,12 +1,11 @@
 #include "arduino.h"
-#include <QDebug>
+#include<QDebug>
 Arduino::Arduino()
 {
     arduino_port_name="";
     arduino_is_available=false;
     serial=new QSerialPort;
 }
-
 QString Arduino::getarduino_port_name()
 {
     return arduino_port_name;
@@ -16,6 +15,7 @@ QSerialPort *Arduino::getserial()
 {
    return serial;
 }
+
 int Arduino::connect_arduino()
 {   // recherche du port sur lequel la carte arduino identifée par  arduino_uno_vendor_id
     // est connectée
@@ -59,11 +59,10 @@ int Arduino::close_arduino()
  QByteArray Arduino::read_from_arduino()
 {
     if(serial->isReadable()){
-         data=serial->readLine(); //récupérer les données reçues
+         data=serial->readAll(); //récupérer les données reçues
 
          return data;
-    }else
-        data = "";
+    }
     return  data;
  }
 

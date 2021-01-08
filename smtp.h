@@ -18,8 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include <QDebug>
 #include <QtWidgets/QMessageBox>
 #include <QByteArray>
-#include <QtNetwork>
-#include <QSslSocket>
+
 
 
 

@@ -1,6 +1,6 @@
 #include "ticket.h"
 #include <QDebug>
-#include "connexion.h"
+
 Ticket::Ticket()
 {
 id="";

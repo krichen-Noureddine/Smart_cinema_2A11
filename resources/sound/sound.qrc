@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>ajout succe.mp3</file>
-        <file>email envoye.mp3</file>
-        <file>supp succ.mp3</file>
-        <file>modif succ.mp3</file>
-    </qresource>
-</RCC>

@@ -1,2 +1,20 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>img/ajout.png</file>
+        <file>img/delete.png</file>
+        <file>img/f.jpg</file>
+        <file>img/login.png</file>
+        <file>img/modify.png</file>
+        <file>img/pdf.png</file>
+        <file>img/search.png</file>
+        <file>img/tri alph.jpg</file>
+        <file>img/7dd205_c6a756d6417a4e6490c34197f6864535~mv2.jpg</file>
+        <file>img/white-cinema-screen-with-audience_38187-89.jpg</file>
+        <file>img/bg.png</file>
+        <file>img/unnamed.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>istockphoto-970785084-170667a.jpg</file>
+        <file>panneau-clap-film-fond-rose-pour-equipement-tournage_9555-779.jpg</file>
+    </qresource>
+</RCC>
